@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    background-color: #010318;
+}
+html {
+    scroll-behavior: smooth;
+}
+    /* Top Navigation Bar */
+.logo{
+    display: inline-block;
+}
+.navIntroSection,.navFeaturedPlaylist,.navRecommendedAlbums,.navReviewSection,.navContactUs{
+    display: inline-block;
+    position: relative;
+    bottom: 50px;
+    left: 663px;
+    margin-left: 15px;
+}
+.logoImg{
+    height: 120px;
+    width: 130px;
+    margin-left: 50px;
+}
+.sectionNames{
+    display: inline-block;
+}
+.linkSectionName{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9595a7;
+    text-decoration: none
+}
+.linkSectionName:hover{
+    color: white;
+    text-decoration: underline;
+    font-weight: 700;
+}
+a{
+    text-decoration: none;
+}
+.searchbarinput{
+    background-color: #21212d;
+    color: white;
+    position: absolute;
+    left: 30%;
+    top: 85px;
+    width: 600px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid white;
+}
+input[type=search]{
+    color: white;
+}
+.gradient1{
+    background-image: linear-gradient(to bottom,#010318,orange);
+    height: 10px;
+}
+    /* Intro Section */
+#introSection{
+    background-image: linear-gradient(to bottom,orange,#010318); 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+}
+.libraryName{
+    color: white;
+    margin-bottom: 10px;
+}
+.nameofsite{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+    font-size: 50px;
+}
+.subtitle{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.startNow{
+    border: 2px solid black;
+    height: 30px;
+    width: 90px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: rgb(238, 238, 108);
+}
+.startNow:hover{
+    background-color: rgb(207, 209, 58);
+    border: 3px solid black;
+}
+.coverPageImage{
+    height: 100%;
+    width: 100%;
+}
+    /* Featured Playlist */
+.playlist{
+    display: flex;
+    justify-content:space-evenly;
+}
+.titleFeaturePlaylist,.titleRecommendedAlbums,.titleUserReviews{
+    background-color: #010318;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 2vw;
+    display: inline-block;
+}
+
+.titleOfSection:hover{
+    text-decoration: underline;
+}
+.subtitleOfSection{
+    font-size: 15px;
+
+}
+.playlist1{
+    border: 2px solid grey;
+}
+.playlist1:hover{
+    background-color: #2b2b2b;
+}
+.imgOfPlaylist1{
+    height: 300px;
+    width: 200px;
+    padding: 10px;
+}
+.detailOfPlaylist{
+    color: white;
+    padding-left: 10px;
+}
+.creators{
+    color: rgb(107, 107, 107);
+}
+.knowMore{
+    font-size: 12px;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  .modal-content {
+    background-color: rgba(0,0,0,0.4);
+    margin: 15% auto;
+    padding: 5px;
+    border: 1px solid #888;
+    width: 40vh;
+  }
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  :target {
+    display: block;
+  }
+    /* Recommended Albums */
+.albumSearch{
+    background-color:#010318;
+    position:relative;
+    left: 40vh;
+    width: 60vw;
+    height: 5vh;
+    border-radius: 20px;
+    border: 2px solid white;
+    margin-bottom: 15px;
+}
+input[type=search]{
+    color: white;
+    padding-left: 10px;
+}
+::placeholder{
+    color: white;
+}
+    /* User Reviews */
+.cardsOfReviews{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.cardForReview{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid grey;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    margin:10px;
+}
+.cardForReview:hover{
+    background-color: #2b2b2b;
+    font-weight: 550;
+}
+.imgOfUserimg{
+    height: 10vh;
+    width: 5vw;
+    border-radius: 50%;
+    display: inline-block;
+}
+.nameOfUser{
+    color: white;
+    display: inline-block;
+}
+.reviewByUser{
+    color:white;
+    display:inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #720455;
+}
+.designation{
+    align-items: center;
+}
+.date{
+    font-family:Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    position:relative;
+    right: 38%;
+}
+.contact {
+    height: auto;
+    background-color: #010318;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    padding-top: none;
+    border-bottom: #444444 solid 0.5px;
+    width:100%;
+  }
+  
+  .contact-heading {
+    padding: 5%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contact-heading h2 {
+    color: #cccccc;
+    font-size: 45px;
+    margin-bottom: 5px;
+  }
+
+  .contact-top {
+    display: flex;
+  }
+  
+  .name,
+  .phone,
+  .email {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1.05%;
+  }
+  
+  .contact-top {
+    width: 72%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .name input,
+  .phone input,
+  .email input {
+    width: 100%;
+    height: 50px;
+    background-color: #240A34;
+    color: #444444;
+    border: none;
+    outline: none;
+  }
+  
+  .title {
+    font-size: 17px;
+    color: white;
+    padding-bottom: 2px;
+  }
+  
+  .contact-bottom {
+    width: 62%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-bottom textarea {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    background-color: #240A34;
+    border: none;
+    outline: none;
+    padding-bottom: 5px;
+  }
+  
+  .contact-bottom textarea:placeholder {
+    color: #444444;
+    font-style: italic;
+  }
+  
+  .contact button{
+    padding:0.5%;
+    margin-top: 20px;
+  }
+    /* Footer */
+h3{
+    display: inline-block;
+    color: white;
+    position:relative;
+    left: 48%;
+}
+.linksforcontact{
+    display: flex;
+    justify-content: center;
+}
+a{
+    margin-left:10px;
+}
+.copyright{
+    color: white;
+    text-align: center;
+}
+.TCPP{
+    text-decoration: none;
+    color: white;
+}
+.goToTop{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+}
