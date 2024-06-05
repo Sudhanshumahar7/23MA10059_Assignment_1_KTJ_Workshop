@@ -72,6 +72,17 @@ input[type=search]{
 .libraryName{
     color: white;
     margin-bottom: 10px;
+    animation: slideFromLeft 1s ease-out forwards;
+}
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
 .nameofsite{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
@@ -95,10 +106,22 @@ input[type=search]{
 .coverPageImage{
     height: 100%;
     width: 100%;
+    animation: slideFromRight 1s ease-out forwards;
+}
+@keyframes slideFromRight {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
 }
     /* Featured Playlist */
 .playlist{
     display: flex;
+    flex-wrap: wrap;
     justify-content:space-evenly;
 }
 .titleFeaturePlaylist,.titleRecommendedAlbums,.titleUserReviews{
@@ -355,4 +378,37 @@ a{
     text-decoration: none;
     color: white;
     font-size: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+
+    .navIntroSection,
+    .navFeaturedPlaylist,
+    .navRecommendedAlbums,
+    .navReviewSection,
+    .navContactUs {
+        position: static; /* Change positioning to static for smaller screens */
+        display: block;
+        margin: 10px 0; /* Adjust margins */
+    }
+
+    .searchbarinput {
+        width: 80%; /* Adjust width of search bar */
+        left: 10%; /* Adjust left position */
+        top: 50px; /* Adjust top position */
+    }
+
+    .playlist1 {
+        width: 100%; /* Make playlist items take full width */
+    }
+
+    .modal-content {
+        width: 80%; /* Adjust modal width */
+    }
+
+    .albumSearch {
+        left: 20%; /* Adjust left position */
+        width: 80%; /* Adjust width */
+    }
 }
