@@ -34,10 +34,8 @@ nav .sectionNames{
     display: none;
 }
 .openMenu i {
-    display: block;
     background: white;
     height: 2px;
-    width: 100%;
     position: relative;
 }
 .openMenu i::before,
