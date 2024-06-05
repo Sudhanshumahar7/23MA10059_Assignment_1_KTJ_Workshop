@@ -21,26 +21,16 @@
             <div class="logo">
                 <img src="./Assets/Designer2.png" class="logoImg">
             </div>
-            <div class="sectionNames">
-                <div class="navIntroSection">
-                    <a href="#introSection" class="linkSectionName">Home</a>
-                </div>
-                <div class="navFeaturedPlaylist">
-                    <a href="#featuredPlaylist" class="linkSectionName">Featured Playlist</a>
-                </div>
-                <div class="navRecommendedAlbums">
-                    <a href="#recommendedAlbums" class="linkSectionName">Recommended Albums</a>
-                </div>
-                <div class="navReviewSection">
-                    <a href="#reviewSection" class="linkSectionName">Review Section</a>
-                </div>
-                <div class="navContactUs">
-                    <a href="#footer" class="linkSectionName">Contact us</a>
-                </div>
-            </div>
-                <div>
-                <input type="search" Placeholder="Search musics..." class="searchbarinput">
-                </div> 
+
+            <label for="toggle" class="openMenu"><i class="fa fa-bars" style="color: white;"></i></label>
+                <ul class="sectionNames">
+                    <li class="navIntroSection"><a href="#introSection" class="linkSectionName">Home</a></li>
+                    <li class="navFeaturedPlaylist"><a href="#featuredPlaylist" class="linkSectionName">Featured Playlist</a></li>
+                    <li class="navRecommendedAlbums"><a href="#recommendedAlbums" class="linkSectionName">Recommended Albums</a></li>
+                    <li class="navReviewSection"><a href="#reviewSection" class="linkSectionName">Review Section</a></li>
+                    <li class="navContactUs"><a href="#footer" class="linkSectionName">Contact us</a></li>
+                    <div class="closeMenu"><i class="fa fa-times"></i></div>
+                </ul>
         </nav>
     </div>
     <div class="gradient1"></div>
@@ -48,7 +38,7 @@
     <div id="introSection">
             <div class="libraryName">
                 <h2 class="nameofsite">MUSIC SPOTLIGHT</h2>
-                <i class="subtitle">Resonate & Relate: Your Playlist, Your Story</i><br>
+                <p class="subtitle">Resonate & Relate: Your Playlist, Your Story</p><br>
                 <a href="#featuredPlaylist"><button class="startNow">Start Now!!</button></a>
             </div>
             <div>
@@ -108,7 +98,7 @@
 <div id="featuredPlaylist">
     <div class="titleFeaturePlaylist">
         <h2 class="titleOfSection">Featured Playlists</h2>
-        <i class="subtitleOfSection"> Spotlight Selections: Today's Top Tracks</i>
+        <p class="subtitleOfSection"> Spotlight Selections: Today's Top Tracks</p>
     </div>
     <div class="playlist">
         <a href="#myModalA">
@@ -354,7 +344,7 @@
 <div id="recommendedAlbums">
     <div class="titleRecommendedAlbums">
         <h2 class="titleOfSection">Recommended Albums</h2>
-        <i class="subtitleOfSection">Editor's Picks: Handpicked Albums Just for You</i>
+        <p class="subtitleOfSection">Editor's Picks: Handpicked Albums Just for You</p>
     </div>
     <div class="seachbardiv">
     <input type="search" Placeholder="Search Your Albums..." class="albumSearch">
@@ -601,7 +591,7 @@
 <div id="reviewSection">
     <div class="titleUserReviews">
         <h2 class="titleOfSection">User Reviews</h2>
-        <i class="subtitleOfSection">Listener Reviews: What Our Community Is Saying</i>
+        <p class="subtitleOfSection">Listener Reviews: What Our Community Is Saying</p>
     </div>
     <div class="cardsOfReviews">
     <div class="cardForReview">
